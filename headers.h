@@ -8,4 +8,4 @@ struct person{
 
 struct person randH();
 void printInfo(struct person h);
-struct person change(struct person h, char *n, int a);
+void change(struct person *h, char *n, int a);

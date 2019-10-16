@@ -1,4 +1,4 @@
-#include <strings.h>
+#include <string.h>
 #include "headers.h"
 
 struct person randH(){
@@ -19,8 +19,7 @@ struct person randH(){
 void printInfo(struct person h){
   printf("Name: %s\nAge: %d\n\n", h.name, h.age);
 }
-struct person change(struct person h, char *n, int a){
-  h.name = n;
-  h.age = a;
-  return h;
+void change(struct person *h, char *n, int a){
+  h -> name = n;
+  h -> age = a;
 }
