@@ -9,7 +9,6 @@ main.o: main.c headers.h
 
 run:
 	./program
-
 clean:
 	rm *.o
 	rm *~
